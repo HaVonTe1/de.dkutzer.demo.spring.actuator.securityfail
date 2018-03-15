@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      #default base-path is "/actuator"
+
+      base-path: actuator #this leads to faulty anonymous access
+
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: when_authorized
+      enabled: true
