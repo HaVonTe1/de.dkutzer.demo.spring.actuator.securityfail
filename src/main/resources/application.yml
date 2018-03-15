@@ -2,9 +2,7 @@ management:
   endpoints:
     web:
       #default base-path is "/actuator"
-
-      base-path: actuator #this leads to faulty anonymous access
-
+      #base-path: actuator #this leads to faulty anonymous access
       exposure:
         include: '*'
   endpoint:
